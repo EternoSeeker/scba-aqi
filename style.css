@@ -1,10 +1,91 @@
+/* Resetting default margin and padding */
 body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Gilroy', Arial, sans-serif; /* Gilroy font family */
+    background-color: #f4f4f4; /* Background color */
 }
 
+/* Styling the header */
+header {
+    background-color: #2196F3; /* Header background color */
+    color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+nav ul li button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Styling the content */
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 160px); /* Adjusted for header and footer height */
+}
+
+/* Styling the map container */
 .map-container {
-    height: 100%;
+    height: 80%; /* Adjust the height as needed */
+    width: 80%; /* Adjust the width as needed */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Preventing overflow */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    background-color: #fff; /* Map container background color */
+}
+
+/* Styling the footer */
+footer {
+    background-color: #2196F3; /* Footer background color */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
     width: 100%;
+}
+
+/* Map attribution */
+footer p {
+    margin: 0;
 }
