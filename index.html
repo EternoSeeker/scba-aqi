@@ -5,14 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Quality Map</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gilroy:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div>
-        <h1>Air Quality Map</h1>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Air Quality Map</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><button id="aqi">Air Quality Index (AQI)</button></li>
+                    <li><button id="sources">Pollution Sources</button></li>
+                    <li><button id="health">Health Effects</button></li>
+                </ul>
+            </nav>
+        </div>
         <p>Click on the map to get the air quality of that location</p>
+    </header>
+    <div class="content">
+        <div id="map" class="map-container"></div>
     </div>
-    <div id="map" class="map-container"></div>
+    <footer>
+        <p>&copy; 2024 Air Quality Map</p>
+    </footer>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="animations.js"></script>
 </body>
 </html>
